@@ -96,8 +96,7 @@ module Mixer = struct
               let abs =
                 if Filename.is_relative exe then
                   Filename.concat (Sys.getcwd ()) exe
-                else
-                  exe
+                else exe
               in
               Filename.dirname abs
             with _ -> "."
